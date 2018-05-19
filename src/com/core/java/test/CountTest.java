@@ -1,6 +1,9 @@
 package com.core.java.test;
-
+import java.util.*;
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 import com.core.java.pgm.Count;
 
@@ -11,6 +14,9 @@ public static void main(String[] args) {
 	int caseCheck[]=co.caseCheck("LEOnardODicapRIo");
 	System.out.println("LowerCase and UpperCase Count in 'LEOnardODicapRIo': "+Arrays.toString(caseCheck));
 	System.out.println("Occurance of a in String 'EzzraFitzzz': "+co.countchar("EzzraFitzzz", 'a'));
+	
+	Set <String,Integer> keys=map.entryset();
+	
 	
 }
 }

@@ -7,6 +7,9 @@ public class PatternTest {
 public static void main(String[] args) {
 	Pattern pat=new Pattern();
 	pat.show(5);
+	pat.showstar();
+	pat.showstar1();
+	pat.showstarrev();
 	PatternReverse pr=new PatternReverse();
 	pr.show(5);
 	pr.display(5);

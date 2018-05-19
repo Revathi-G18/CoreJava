@@ -2,6 +2,7 @@ package com.core.java.pgm;
 
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class Count {
@@ -45,7 +46,7 @@ public int countchar(String s, char c){
 
 public Map countallchar(String s){
 	int length=s.length();
-	Map map=new HashMap();
+	HashMap<Character,Integer> map=new HashMap<Character,Integer>();
 	for(int i=0;i<length;i++){
 		if(map.get(s.charAt(i))==null){
 			map.put(s.charAt(i), 1);
@@ -53,6 +54,15 @@ public Map countallchar(String s){
 			int c=(int) map.get(s.charAt(i));
 			map.put(s.charAt(i), c+1);
 		}
-	}return map;
+		
+	}
+	/*Iterator<Map.Entry<String, Integer>> itr = map.entrySet().iterator();
+
+	while (itr.hasNext()){
+		Map.Entry<String, Integer> entry = itr.next();*/
+		return map;
+	}
+	/*for (Map.Entry<String, Integer> entry: map.entrySet())*/
+	
 }
-}
+
