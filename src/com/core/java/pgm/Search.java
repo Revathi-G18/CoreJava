@@ -63,15 +63,48 @@ public class Search {
 		}
 		return num;
 	}
-/*public int[] merge(int num[]){
-	int first,last,temp,i,j,mid;
-	int size = num.length;
-	first=0;
-	last=size-1;
-	for(i=0;i<size;i++){
-		mid = (first + last) / 2;
+
+	public int[] merge(int num[]) {
+		int first, last, temp, i, j, k, mid, arr1[]={}, arr2[]={};
+		int size = num.length;
+		first = 0;
+		last = size;
+		int arr3[]={};
+		for (i = 0; i < size; i++) {
+			mid = (first + last) / 2;
+			for (j = 0; j <= mid; j++) {
+				arr1[j] = num[j];
+			}Arrays.sort(arr1);
+			
+			for (k = mid+1; k < size; k++) {
+				arr2[i] = num[k];
+			}Arrays.sort(arr2);
+			int l=0,m=0,n=0;
+			
+			
+			int sizeofarr1=arr1.length;
+			int sizeofarr2=arr2.length;
+			while(l<size && m<sizeofarr1){		
+				if(arr1[i]<arr2[j]){
+					arr3[n]=arr1[l];
+					l++;
+				}else{
+					arr3[n]=arr2[m];
+					m++;
+				}n++;
+			}
+			if(l<sizeofarr1){
+				for(;l<sizeofarr1;l++){arr3[n]=arr1[i];}
+			}
+			if(m<sizeofarr2){
+				for(;m<sizeofarr2;m++){
+					arr3[n]=arr2[l];
+				}
+			} 
+		}return arr3;
+		}
+		
 		
 		
 	}
-}*/
-}
+

@@ -10,6 +10,7 @@ public static void main(String[] args) {
 	pat.showstar();
 	pat.showstar1();
 	pat.showstarrev();
+	pat.box();
 	PatternReverse pr=new PatternReverse();
 	pr.show(5);
 	pr.display(5);
