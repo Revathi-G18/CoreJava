@@ -15,7 +15,7 @@ public static void main(String[] args) {
 	System.out.println("LowerCase and UpperCase Count in 'LEOnardODicapRIo': "+Arrays.toString(caseCheck));
 	System.out.println("Occurance of a in String 'EzzraFitzzz': "+co.countchar("EzzraFitzzz", 'a'));
 	
-	Set <String,Integer> keys=map.entryset();
+	//Set <String,Integer> keys=map.entryset();
 	
 	
 }
