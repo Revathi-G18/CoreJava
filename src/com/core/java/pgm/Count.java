@@ -56,6 +56,8 @@ public Map countallchar(String s){
 		}
 		
 	}
+	
+
 	/*Iterator<Map.Entry<String, Integer>> itr = map.entrySet().iterator();
 
 	while (itr.hasNext()){

@@ -28,7 +28,7 @@ public static void main(String[] args) {
 	System.out.println("after sorting");
 		collect.displayusingIterator(intList);
 	collect.displayusingforloop(stringList);
-	System.out.println(collect.search(stringList, "Mona"));
+	System.out.println(collect.search(stringList, "oo"));
 	System.out.println(collect.searchbyListPosition(intList, 66));
 }
 }

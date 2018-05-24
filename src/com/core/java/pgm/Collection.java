@@ -22,14 +22,14 @@ public void displayusingforloop(List list){
 		System.out.println(i);
 	}
 }
-public boolean searchbyListPosition(List<Integer> list,int i){
+public int searchbyListPosition(List<Integer> list,int i){
 	int index=list.indexOf(i);
+	for(Integer List:list)
 	if(index==i){
-		return true;
+		return 0;
 	}
-	return  false;
-	
-}
+	return  index;
+	}
 public boolean search(List<String> list, String str){
 	for(String s:list){
 		if(s.equalsIgnoreCase(str)){
