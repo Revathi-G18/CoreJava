@@ -3,6 +3,7 @@ package com.core.java.pgm;
 import java.util.Arrays;
 
 public class Search {
+	//follow camel case
 	public boolean linearsearch(int number, int num[]) {
 		int size = num.length;
 		for (int i = 0; i < size; i++) {
@@ -27,6 +28,7 @@ public class Search {
 			} else if (num[mid] == number) {
 				return true;
 			} else {
+				//can't return false directly, number may be present in other position.
 				return false;
 			}
 		}
@@ -64,6 +66,7 @@ public class Search {
 		return num;
 	}
 
+	//merge OR mergSort??
 	public int[] merge(int num[]) {
 		int first, last, temp, i, j, k, mid, arr1[]={}, arr2[]={};
 		int size = num.length;
@@ -74,11 +77,14 @@ public class Search {
 			mid = (first + last) / 2;
 			for (j = 0; j <= mid; j++) {
 				arr1[j] = num[j];
-			}Arrays.sort(arr1);
+			}
+			//should not use sort method.
+			Arrays.sort(arr1);
 			
 			for (k = mid+1; k < size; k++) {
 				arr2[i] = num[k];
-			}Arrays.sort(arr2);
+			}//should not use sort method.
+			Arrays.sort(arr2);
 			int l=0,m=0,n=0;
 			
 			
