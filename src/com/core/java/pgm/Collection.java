@@ -18,11 +18,13 @@ public void displayusingIterator(List list)
 	}
 }
 public void displayusingforloop(List list){
+	//get list.size before loop --performance.
 	for(int i=0;i<list.size();i++){
 		System.out.println(i);
 	}
 }
 public int searchbyListPosition(List<Integer> list,int i){
+	//list.get(i) is enough right?
 	int index=list.indexOf(i);
 	for(Integer List:list)
 	if(index==i){
