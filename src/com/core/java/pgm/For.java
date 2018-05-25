@@ -1,6 +1,7 @@
 package com.core.java.pgm;
-
+//use meaning full class name
 public class For {
+	//method name should fallow camel case
 	public String getgrade(int english, int physics, int chemistry) {
 		int total = (english + physics + chemistry) / 3;
 		if (total > 90) {
