@@ -2,6 +2,7 @@
 package com.core.java.pgm;
 
 public class Abignum {
+	//what to return both max and max position?
 public int[] big(int num[]){
 	int max=num[0],i,index=0;
 	int size=num.length;
@@ -10,6 +11,7 @@ public int[] big(int num[]){
 			max=num[i];
 			index=i;
 		}
+		//index-1 ??
 	}return new int[] {max,index};
 }
 
@@ -30,6 +32,7 @@ public int[] merge(int num[],int num1[]){
 	int size1=num1.length;
 	for(i=0;i<size;i++){
 		num2[i]=num[i];
+		//why another count variable?
 		count++;
 		}
 	for(j=0;j<size1;j++){
@@ -37,6 +40,8 @@ public int[] merge(int num[],int num1[]){
 	}return num2;
 }	
 
+	//why to return?
+	//what is call by reference?
 public int[] insert(int num[],int number,int position){
 	int size=num.length;
 	for(int i=size-1;i>position;i--){
@@ -45,7 +50,8 @@ public int[] insert(int num[],int number,int position){
 	num[position]=number;
 	return num;
 }
-
+//why to return?
+	//what is call by reference?
 public int[] deleteposition(int num[],int position){
 	int size=num.length;
 	for(int i=position;i<size-1;i++){
@@ -54,7 +60,8 @@ public int[] deleteposition(int num[],int position){
 	num[size-1]=0;
 		return num;
 }
-
+//why to return?
+	//what is call by reference?
 public int[] deletenumber(int num[],int number){
 	int size=num.length;
 	for (int i=0;i<size;i++){
@@ -62,10 +69,12 @@ public int[] deletenumber(int num[],int number){
 			num[i]=num[i+1];
 		}
 		}
+	//should shoter -1 instead of 0.
 	num[size-1]=0;
 	return num;
 }
 
+	// is merge sort OR mering two arrays?
 public int[] mergesorted(int sortnum1[],int sortnum2[]){
 	int i=0,j=0,g=0;
 	int size=sortnum1.length;
